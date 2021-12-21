@@ -22,7 +22,7 @@ jobs:
         distribution: ['temurin', 'zulu', 'liberica']
         experimental: [false]
         # jena 3.x has some locking problems under JDK 16/17
-       include:
+        include:
          - jdk: '15' # Zulu MTS
            experimental: true
            distribution: zulu
