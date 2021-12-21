@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - Issue111_exceptionWithInlinedProperties
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
