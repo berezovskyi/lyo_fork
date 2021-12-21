@@ -1,4 +1,4 @@
-test# Eclipse Lyo
+# Eclipse Lyo
 
 ![CI Parent](https://github.com/eclipse/lyo/workflows/CI%20Parent/badge.svg)
 [![](https://img.shields.io/jenkins/s/https/ci.eclipse.org/lyo/job/lyo-monorepo.svg?label=Eclipse%20Jenkins)](https://ci.eclipse.org/lyo/job/lyo-monorepo/)
