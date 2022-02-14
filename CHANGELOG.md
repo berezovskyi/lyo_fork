@@ -1,5 +1,33 @@
 # Eclipse Lyo changelog
 
+## [Unreleased]
+
+### Added
+- LyoStore: Providing a system property `OSLC4JUtils.hasLyoStorePagingPreciseLimit()` to allow the application to check whether query paging should return an exact number of elements in a paged query, or not (`OSLC4JConstants.LYO_STORE_PAGING_PRECISE_LIMIT`).
+
+
+### Changed
+- 🧨 Lyo is now built using JDK 11
+- 🧨 Jena is upgraded to 4.4.0
+  - Jena renamed `RDFReader/RDFWriter` to `RDFReaderI/RDFWriterI`
+- LyoStore: Ordering resources by their subject IDs when doing a query to store. This ordering can be disabled with a call to `OSLC4JUtils.setLyoStorePagingUnsafe(true)`
+- LyoStore: `OSLC4JUtils.hasLyoStorePagingPreciseLimit()` will return true by default. Call `OSLC4JUtils.setLyoStorePagingPreciseLimit(false)` to restore the old behavior.
+
+
+### Deprecated
+
+- `IQueryGenerator` is deprecated and will be removed in Lyo 6
+
+### Removed
+- 🧨 **Support for JDK 8 was removed**
+- 🧨 `oslc-java-client` was removed
+- **`lyo-validation` temporarily removed from the build**
+- `oslc4j-wink` was removed
+- `oslc4j-registry` was removed
+- Store support for TDB1 and in-memory backends was removed. 
+
+### Fixed
+
 ## 4.1.0
 
 ### Added
